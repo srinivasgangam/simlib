@@ -1,0 +1,37 @@
+//
+//#include base.txt 
+//
+@OBJ1            //fsadfasdf
+  value1       =       [10..20]
+  value0       =       0x10
+  value2       =  [1,2]  //fasdfasd
+  value4       =  [1..10]pc
+  value5       =  [0x2..4,7]ou //cyclic_uniq
+  value33      =  33
+  value7       =  [3,4,5,6]
+  value8       =  [6..20,3,4,5,50]
+  valueSeq     =  [6..9,3,4,5,50..54,11]s
+  valueSeqU    =   [6..9,3,4,5,50..54,11]su
+  list         =   [1,2,3,4,5,6]p
+  string1      =  hero
+  string2      =  [hero1;hero2]
+
+  wtVal        =    [1#1,2#4]
+  wtVal1       =    [1#1,2..9#4]
+  wtValSeq     =    [1#10,2#4]s
+  wtVal1Seq    =    [1..2#2,4#3,6..10,11#3]s  //Only one cycle will work with wt later wt will become 1
+  wtVal1SeqU   =    [1..3,4#10,5..20]su
+
+  
+@OBJ%d(0..2,3)
+  new_val%d(0..5)  =   [2..10]
+  new_val_arr      =   [1..10]
+  new_val_arr[0]   =   [11..20]
+  new_val_arr[%d(7..9)]   =   [11..20]
+  new_val_arr [%d(3,0x4,5..6,0xa)] =    [21..30]
+  uniq_val         =  [0..0x7fffffff]u
+
+//@OBJ1
+// value4 = [11]p
+// value8 = 3
+// wtValSeq = 10
